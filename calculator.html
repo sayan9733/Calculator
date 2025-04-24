@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffffef;
+        }
+        .calculator-box {
+            background: rgb(255, 255, 255);
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            border: 2px solid #ccc;
+}
+
+        h1 {
+            font-size: 20px;
+        }
+        input, select, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 30px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <form class="calculator-box" action="./calculate" method="POST">
+        <label>Num 1:</label>
+        <input type="number" name="number" id="num1">
+        <br>
+        <label>Num 2:</label>
+        <input type="number" name="number" id="num2">
+        <br>
+        <label>Operation:</label>
+        <select name="operator" id="operator">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="division">Division</option>
+        </select>
+        <br><br>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</body>
+</html>
